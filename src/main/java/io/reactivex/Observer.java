@@ -73,7 +73,7 @@ import io.reactivex.disposables.Disposable;
  * @param <T>
  *          the type of item the Observer expects to observe
  */
-public interface Observer<T> {
+public interface Observer<T> extends ReferenceHolder {
 
     /**
      * Provides the Observer with the means of cancelling (disposing) the
